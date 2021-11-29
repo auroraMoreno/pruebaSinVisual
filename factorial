@@ -1,0 +1,21 @@
+package ejerciciosaceptareto;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aurora
+ */
+public class factoriall {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int numuser;
+        int total=1; 
+        System.out.println("Introduce un número para saber su factorial");
+        numuser= entrada.nextInt();
+        for(int i=1; i <= numuser; i++){
+            total = total * i;
+        }
+        System.out.println("El factorial de " + numuser + " es: " + total);
+    }
+}
